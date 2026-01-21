@@ -43,46 +43,7 @@ function App() {
   const [filterGrade, setFilterGrade] = useState('all')
   const [filterSemester, setFilterSemester] = useState('all')
 
-  const initialExams = [
-    {
-      id: 1,
-      name: '第一次段考',
-      type: '月考',
-      grade: '高一',
-      semester: '上学期',
-      date: '2025-10-10',
-      scores: {
-        chinese: '98',
-        math: '94',
-        english: '102.5',
-        physics: '76',
-        chemistry: '89',
-        biology: '88',
-        politics: '68',
-        history: '63',
-        geography: '75'
-      }
-    },
-    {
-      id: 2,
-      name: '期中考试',
-      type: '期中',
-      grade: '高一',
-      semester: '上学期',
-      date: '2025-11-11',
-      scores: {
-        chinese: '87',
-        math: '97',
-        english: '100.5',
-        physics: '77',
-        chemistry: '48',
-        biology: '70',
-        politics: '98',
-        history: '96',
-        geography: '95'
-      }
-    }
-  ]
+  const initialExams = []
 
   useEffect(() => {
     const savedExams = localStorage.getItem('grade-tracker-exams')
